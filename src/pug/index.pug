@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Cycle-PC
+    link(rel="stylesheet", href="lib/style.css")
+  body 
+    //- Alex Zolotarov 2021.05.14 
+    //- https://wegtx.github.io/
+
+    .wrapper  
+      header.header 
+        .topbar 
+          img.logo(src="lib/media/logo.svg", alt="logo")
+          nav.nav 
+            a.nav__item(href="#") Главная
+            a.nav__item(href="#") Курсы
+            a.nav__item(href="#") Расписание
+            a.nav__item(href="#") Преподаватели
+            a.nav__item(href="#") Рассылка
+            a.nav__item(href="#") Контакты
+          button.sign-up Зайти в кабинет
+        img.intro__bg(src="lib/media/main-bg.svg", alt="background")
+        .intro 
+          h2.intro__title Первый курс <br> по компьютерной сборке
+          .intro__timer 
+            script(src="//megatimer.ru/get/6623a1c69caa6fda04f4b776f88d6f6e.js")
+      main.main 
+      footer.footer
+  
+    script(src="lib/script.js") 
