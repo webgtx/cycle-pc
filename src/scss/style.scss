@@ -85,6 +85,7 @@
     }
   }
   .botbar {
+    transform: translate(0, -5%);
     height: 10vh;
     background: #121212;
     display: flex;
@@ -184,6 +185,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     .start__title {
       display: flex;
       align-items: center;
@@ -200,35 +202,66 @@
       margin-bottom: 80px;
       @include light-text;
     }
+    .start__progress {
+      max-width: 1296px;
+      max-height: 273px;
+      display: grid;
+      grid-template: .5fr .8fr 1fr / 1fr 1fr 1fr 1fr;
+      .progress__text {
+        font-size: 36px;
+      }
+      .porgress__bar {
+        width: 324px;
+        background: linear-gradient(90deg, #C89AFC, #7C6AFA);
+        align-self: center;
+      }
+      .first {
+        height: 80px;
+      }
+      .second {
+        height: 60px;
+      }
+      .third {
+        height: 30px;
+      }
+      .fourth {
+        height: 10px;
+      }
+      .progress__info {
+        @include light-text;
+        transform: translate(0, 35px);
+      }
+    }
   }
-  .start__progress {
-    max-width: 1296px;
-    max-height: 273px;
-    display: grid;
-    grid-template: .5fr .8fr 1fr / 1fr 1fr 1fr 1fr;
-    .progress__text {
-      font-size: 36px;
+  .advantages {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .advantages__title {
+      font-size: 48px;
+      text-align: center;
     }
-    .porgress__bar {
-      width: 324px;
-      background: linear-gradient(90deg, #C89AFC, #7C6AFA);
-      align-self: center;
-    }
-    .first {
-      height: 80px;
-    }
-    .second {
-      height: 60px;
-    }
-    .third {
-      height: 30px;
-    }
-    .fourth {
-      height: 10px;
-    }
-    .progress__info {
-      @include light-text;
-      transform: translate(0, 35px);
+    .advantages__options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .option__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .option-ico {
+          margin-top: 30%;
+        }
+        .option-title {
+          margin: 8%;
+        }
+        .option-info {
+          @include light-text;
+          max-width: 360px;
+        }
+      }
     }
   }
 }

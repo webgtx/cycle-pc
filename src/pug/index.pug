@@ -5,12 +5,14 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Cycle-PC
+    link(rel="stylesheet", href="https://unpkg.com/aos@2.3.1/dist/aos.css")
     link(rel="stylesheet", href="lib/style.css")
   body 
     //- Alex Zolotarov 2021.05.14 
     //- https://webgtx.github.io/
 
     .wrapper  
+      //- Header: first block of website
       header.header 
         .topbar 
           img.logo(src="lib/media/logo.svg", alt="logo")
@@ -38,13 +40,15 @@ html(lang="en")
               .earning__stats 
                 p.stats__text 0
                 p.stats__text 100000 P
+      //- Main: Main content container
       main.main 
+        //- About compnay
         .about
-          img.about__img(src="lib/media/pc.svg", alt="computer")
-          .about__info 
+          img.about__img(src="lib/media/pc.svg", alt="computer" data-aos="fade-right")
+          .about__info(data-aos="fade-left")
             h2.info__title Чем мы занимаемся?
             p.info__text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati corporis blanditiis temporibus assumenda, incidunt perferendis nesciunt autem veritatis ut sunt sed magni molestiae est aliquam rem saepe ab aliquid voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a dolores vero doloremque dolorum quod officia quis sint, officiis autem soluta aliquam nihil, ratione numquam praesentium exercitationem laudantium impedit sequi.
-        .start 
+        .start
           .start__title 
             img.start-img(src="lib/media/elem.svg", alt="element")
             h2.start-text Быстрый старт
@@ -62,7 +66,23 @@ html(lang="en")
             p.progress__info Lorem ipsum dolor sit amet consectetur adipisicing elit. In, sit! At nobis, enim architecto asperiores quasi minima temporibus vel animi voluptatibus neque quas ipsum repellendus doloremque iusto, esse nihil sint.
             p.progress__info Lorem ipsum dolor sit amet consectetur adipisicing elit. In, sit! At nobis, enim architecto asperiores quasi minima temporibus vel animi voluptatibus neque quas ipsum repellendus doloremque iusto, esse nihil sint.
             p.progress__info Lorem ipsum dolor sit amet consectetur adipisicing elit. In, sit! At nobis, enim architecto asperiores quasi minima temporibus vel animi voluptatibus neque quas ipsum repellendus doloremque iusto, esse nihil sint.
+        .advantages
+          h1.advantages__title Получите профессию прямо сейчас
+          .advantages__options
+            .option__item
+              img.option-ico(src="lib/media/icon-1.svg", alt="icon")
+              h3.option-title Только практические <br> навыки в работе
+              p.option-info Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Вопроса взгляд сбить страну букв все власти строчка, ручеек последний злых меня текста лучше первую. Единственное рот текст знаках пор.
+            .option__item
+              img.option-ico(src="lib/media/icon-2.svg", alt="icon")
+              h3.option-title Работа на самом <br> современном оборудовании
+              p.option-info Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Вопроса взгляд сбить страну букв все власти строчка, ручеек последний злых меня текста лучше первую. Единственное рот текст знаках пор.
+            .option__item
+              img.option-ico(src="lib/media/icon-3.svg", alt="icon")
+              h3.option-title Сертификация <br>по окончании обучения
+              p.option-info Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Вопроса взгляд сбить страну букв все власти строчка, ручеек последний злых меня текста лучше первую. Единственное рот текст знаках пор.
 
       footer.footer
   
+    script(src="https://unpkg.com/aos@2.3.1/dist/aos.js") 
     script(src="lib/script.js") 
