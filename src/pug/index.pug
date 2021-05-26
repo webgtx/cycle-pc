@@ -98,56 +98,67 @@ html(lang="en")
             img.gallery-item(src="lib/media/partners-logo.svg", alt="", data-aos="fade-up")
             img.gallery-item(src="lib/media/partners-logo.svg", alt="", data-aos="fade-up-left")
         //- Program
-        .program 
+        .program(data-aos="fade-down")
           img.program-element(src="lib/media/elem.svg", alt="element")
           h2.program-title Программа обучения
           p.program-info Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер
           .program__timeline 
             .timeline-line
-            .timeline__item
+            .timeline__item(data-aos="fade-down")
               h5.timeline-counter Неделя №1
               p.timeline-info Красивая часть курса, <br>которая помогает в успехе
-            .timeline__item
+            .timeline__item(data-aos="fade-down")
               h5.timeline-counter Неделя №2
               p.timeline-info Красивая часть курса, <br>которая помогает в успехе
-            .timeline__item
+            .timeline__item(data-aos="fade-down")
               h5.timeline-counter Неделя №3
               p.timeline-info Красивая часть курса, <br>которая помогает в успехе
-            .timeline__item
+            .timeline__item(data-aos="fade-down")
               h5.timeline-counter Неделя №4
               p.timeline-info Красивая часть курса, <br>которая помогает в успех
-            .timeline__item
+            .timeline__item(data-aos="fade-down")
               h5.timeline-counter Неделя №5
               p.timeline-info Красивая часть курса, <br>которая помогает в успехе
-            .timeline__item
+            .timeline__item(data-aos="fade-down")
               h5.timeline-counter Неделя №6
               p.timeline-info Красивая часть курса, <br>которая помогает в успехе
-            .timeline__item
+            .timeline__item(data-aos="fade-down")
               h5.timeline-counter Неделя №7
               p.timeline-info Красивая часть курса, <br>которая помогает в успехе
           //- Teachers
           .teachers 
-            .teachers__title 
+            .teachers__title(data-aos="fade-right")
               img.teachers-element(src="lib/media/elem.svg", alt="element")
               h2.teachers-title-text Ваши преподаватели
             .teachers__cards
-              .teachers-card 
+              .teachers-card(data-aos="fade-down")
                 img.card-img(src="lib/media/avatar.svg", alt="avatar")
                 h3.card-name Дмитрий Иванов
                 p.card-info Специалист по видеокартам
                 button.card-button Биография
-              .teachers-card 
-                img.card-img(src="lib/media/avatar.svg", alt="avatar")
+              .teachers-card(data-aos="fade-down")
+                img.card-img(src="lib/media/avatar1.svg", alt="avatar")
                 h3.card-name Дмитрий Иванов
                 p.card-info Специалист по видеокартам
                 button.card-button Биография
-              .teachers-card 
-                img.card-img(src="lib/media/avatar.svg", alt="avatar")
+              .teachers-card(data-aos="fade-down")
+                img.card-img(src="lib/media/avatar2.svg", alt="avatar")
                 h3.card-name Дмитрий Иванов
                 p.card-info Специалист по видеокартам
                 button.card-button Биография
 
       footer.footer
+        h2.footer__title Статьи каждую неделю
+        p.footer__info Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер
+        .footer__form
+          input(type="text" placeholder="E-mail").form-input
+          button.form-button Подписаться
+        .footer__sn 
+          img.sn-img(src="lib/media/vk.svg", alt="social-networks")
+          img.sn-img(src="lib/media/instagram.svg", alt="social-networks")
+          img.sn-img(src="lib/media/youtube.svg", alt="social-networks")
+          img.sn-img(src="lib/media/facebook.svg", alt="social-networks")
+        p.footer__copyright I dont care @ 2021
   
     script(src="https://unpkg.com/aos@2.3.1/dist/aos.js") 
     script(src="lib/script.js") 
