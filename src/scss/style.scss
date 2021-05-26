@@ -377,4 +377,56 @@
       }
     }
   }
+  // Teachers
+  .teachers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 231px;
+    .teachers__title {
+      display: flex;
+      align-items: center;
+      align-self: flex-start;
+      .teachers-title-text {
+        margin-left: 38px;
+        font-size: 48px;
+      }
+      .teachers-element {
+        transform: rotate(-45deg);
+      }
+    }
+    .teachers__cards {
+      margin-top: 113px;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      text-align: center;
+      .card-img {
+        object-fit: fill;
+      }
+      .card-name {
+        margin-top: 40px;
+        font-size: 24px;
+      }
+      .card-info {
+        margin-top: 15px;
+        @include light-text;
+      }
+      .card-button {
+        margin-top: 40px;
+        height: 37px;
+        width: 143px;
+        border-radius: 50px;
+        border: 1px solid #fff;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0);
+        transition: .4s ease;
+        &:hover {
+          color: #000;
+          background-color: #fff;
+        }
+      }
+    }
+  }
 }
